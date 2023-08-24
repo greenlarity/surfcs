@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class InputData
@@ -10,62 +9,8 @@ public class InputData
     public bool JumpPressed;
     public bool JumpPressedLastUpdate;
     public bool ResetPressed;
-
-    public void Update(MovementConfig movementConfig)
-    {
-        #region ---- Catch Movement ----
-
-        var moveLeft = Input.GetKey(movementConfig.MoveLeft);
-        var moveRight = Input.GetKey(movementConfig.MoveRight);
-        var moveForward = Input.GetKey(movementConfig.MoveForward);
-        var moveBack = Input.GetKey(movementConfig.MoveBack);
-
-        // Sides movement
-        if (moveLeft)
-        {
-            SideMove = -movementConfig.Accel;
-        }
-        else if (moveRight)
-        {
-            SideMove = movementConfig.Accel;
-        }
-        else
-        {
-            SideMove = 0;
-        }
-
-        //Frontal movement
-        if (moveForward)
-        {
-            ForwardMove = movementConfig.Accel;
-        }
-        else if (moveBack)
-        {
-            ForwardMove = -movementConfig.Accel;
-        }
-        else
-        {
-            ForwardMove = 0;
-        }
-
-        #endregion
-
-        #region ---- Catch Inputs ----
-
-        ResetPressed = Input.GetKey(movementConfig.ResetButton);
-
-        JumpPressedLastUpdate = JumpPressed;
-        JumpPressed = Input.GetKey(movementConfig.JumpButton);
-
-        #endregion
-
-        #region ---- Catch Mouse Movement ----
-
-        MouseX = Input.GetAxis("Mouse X") * movementConfig.XSens * 0.02f;
-        MouseY = Input.GetAxis("Mouse Y") * movementConfig.YSens * 0.02f;
-
-        #endregion
-    }
+    public bool GetCheckpoint;
+    public bool SetCheckpoint;
 
     public void CalculateMovement(MovementConfig movementConfig)
     {
@@ -95,6 +40,7 @@ public class InputData
         {
             ForwardMove = movementConfig.Accel;
         }
+
         else if (moveBack)
         {
             ForwardMove = -movementConfig.Accel;
@@ -109,6 +55,8 @@ public class InputData
         #region ---- Catch Inputs ----
 
         ResetPressed = Input.GetKey(movementConfig.ResetButton);
+        GetCheckpoint = Input.GetKey(movementConfig.GetCPButton);
+        SetCheckpoint = Input.GetKey(movementConfig.SetCPButton);
 
         JumpPressedLastUpdate = JumpPressed;
         JumpPressed = Input.GetKey(movementConfig.JumpButton);

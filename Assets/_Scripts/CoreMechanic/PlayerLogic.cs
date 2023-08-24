@@ -1,8 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerLogic : MonoBehaviour, ISurfControllable
 {
+    public Text SpeedText; 
     [Header("Walk And Jump")] public float WalkSpeed = 80f;
     public float JumpForce = 40f;
 
@@ -15,6 +17,7 @@ public class PlayerLogic : MonoBehaviour, ISurfControllable
     private Rigidbody _rb;
     private Vector3 _startPos;
     private Quaternion _originalRot;
+    private Vector3 _checkpointPos;
 
     private SurfController _surfController = new SurfController();
 
@@ -45,6 +48,7 @@ public class PlayerLogic : MonoBehaviour, ISurfControllable
         
         PlayerData.Origin = transform.position;
         _startPos = transform.position;
+        _checkpointPos = transform.position;
         _originalRot = transform.localRotation;
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -54,15 +58,23 @@ public class PlayerLogic : MonoBehaviour, ISurfControllable
     private void Update()
     {
         InputData.CalculateMovement(MovementConfig);
-        // InputData.Update(MovementConfig);
         UpdateViewAngle();
+        SpeedText.text = (10f * PlayerData.Velocity.magnitude).ToString("F0");
     }
 
     private void FixedUpdate()
     {
         if (InputData.ResetPressed) {
-            PlayerData.Velocity = Vector3.zero;
-            PlayerData.Origin = _startPos;
+            ResetPosition();
+        }
+
+        if (InputData.GetCheckpoint)
+        {
+            CheckpointLoad();
+        }
+        if (InputData.SetCheckpoint)
+        {
+            SetCheckpoint();
         }
 
         var fixedDeltaTime = Time.fixedDeltaTime;
@@ -97,5 +109,22 @@ public class PlayerLogic : MonoBehaviour, ISurfControllable
 
         // Rotate the attached camera for vertival move
         MainCam.transform.localRotation = yQuaternion;
+    }
+
+    public void ResetPosition()
+    {
+        PlayerData.Velocity = Vector3.zero;
+        PlayerData.Origin = _startPos;
+    }
+
+    public void SetCheckpoint()
+    {
+        _checkpointPos = transform.position;
+    }
+
+    public void CheckpointLoad()
+    {
+        PlayerData.Velocity = Vector3.zero;
+        PlayerData.Origin = _checkpointPos;
     }
 }

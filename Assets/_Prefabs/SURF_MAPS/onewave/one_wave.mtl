@@ -1,0 +1,144 @@
+# wb_ground_black
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_0.tga
+
+# wb_blocks
+newmtl material_1
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_1.tga
+
+# black
+newmtl material_2
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_2.tga
+
+# wb_brick
+newmtl material_3
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_3.tga
+
+# wb_crate
+newmtl material_4
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_4.tga
+
+# !waterblue
+newmtl material_5
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_5.tga
+
+# mapbybart
+newmtl material_6
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_6.tga
+
+# startbutton2
+newmtl material_7
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_7.tga
+
+# +0button2
+newmtl material_8
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_8.tga
+
+# starttable
+newmtl material_9
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_9.tga
+
+# endbutton2
+newmtl material_10
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_10.tga
+
+# kznum0
+newmtl material_11
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_11.tga
+
+# kznum1
+newmtl material_12
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_12.tga
+
+# kznum2
+newmtl material_13
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_13.tga
+
+# kznum3
+newmtl material_14
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_14.tga
+
+# kznum4
+newmtl material_15
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_15.tga
+
+# kznum5
+newmtl material_16
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_16.tga
+
+# kznum6
+newmtl material_17
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_17.tga
+
+# kznum7
+newmtl material_18
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_18.tga
+
+# kznum8
+newmtl material_19
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_19.tga
+
+# kznum9
+newmtl material_20
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_20.tga
+
+# white
+newmtl material_21
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_21.tga
+
+# red
+newmtl material_22
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_22.tga
+
+# decalconverter
+newmtl material_23
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd one_wave_material_23.tga
+

@@ -1,0 +1,76 @@
+# Brick293
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_0.tga
+
+# Brick327
+newmtl material_1
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_1.tga
+
+newmtl material_2
+Kd 1.0000 1.0000 1.0000
+illum 0
+
+# kznum0
+newmtl material_3
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_3.tga
+
+# kznum1
+newmtl material_4
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_4.tga
+
+# kznum2
+newmtl material_5
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_5.tga
+
+# kznum3
+newmtl material_6
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_6.tga
+
+# kznum4
+newmtl material_7
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_7.tga
+
+# kznum5
+newmtl material_8
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_8.tga
+
+# kznum6
+newmtl material_9
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_9.tga
+
+# kznum7
+newmtl material_10
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_10.tga
+
+# kznum8
+newmtl material_11
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_11.tga
+
+# kznum9
+newmtl material_12
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd fly_material_12.tga
+

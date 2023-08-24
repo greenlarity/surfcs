@@ -28,6 +28,8 @@ public class MovementConfig
     public KeyCode MoveBack = KeyCode.S;
     public KeyCode JumpButton = KeyCode.Space;
     public KeyCode ResetButton = KeyCode.R;
+    public KeyCode SetCPButton;
+    public KeyCode GetCPButton;
     
     public bool ClampAirSpeed;
     public float Bounce;

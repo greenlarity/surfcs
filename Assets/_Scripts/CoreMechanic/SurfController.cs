@@ -91,7 +91,7 @@ public class SurfController
     
     private Vector3 GroundInputMovement()
     {
-        GetWishValues(out Vector3 wishVel, out Vector3 wishDir, out float wishSpeed);
+        GetWishValues(out var wishVel, out var wishDir, out var wishSpeed);
 
         if ((wishSpeed != 0.0f) && (wishSpeed > _movementConfig.MaxSpeed))
         {
@@ -133,7 +133,7 @@ public class SurfController
         forward.Normalize();
         right.Normalize();
 
-        for (int i = 0; i < 3; i++)
+        for (var i = 0; i < 3; i++)
             wishVel[i] = forward[i] * _surfControllable.InputData.ForwardMove + right[i] * _surfControllable.InputData.SideMove;
         wishVel[1] = 0;
 

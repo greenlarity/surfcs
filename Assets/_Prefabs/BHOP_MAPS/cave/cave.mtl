@@ -1,0 +1,124 @@
+# outbricki
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_0.tga
+
+newmtl material_1
+Kd 1.0000 1.0000 1.0000
+illum 0
+
+# sand
+newmtl material_2
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_2.tga
+
+# sand1
+newmtl material_3
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_3.tga
+
+# WOODFLOOR01_512
+newmtl material_4
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_4.tga
+
+# raz4
+newmtl material_5
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_5.tga
+
+# raz3
+newmtl material_6
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_6.tga
+
+# raz1
+newmtl material_7
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_7.tga
+
+# starttable
+newmtl material_8
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_8.tga
+
+# stoptable
+newmtl material_9
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_9.tga
+
+# kznum6
+newmtl material_10
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_10.tga
+
+# kznum7
+newmtl material_11
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_11.tga
+
+# kznum8
+newmtl material_12
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_12.tga
+
+# kznum9
+newmtl material_13
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_13.tga
+
+# kznum5
+newmtl material_14
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_14.tga
+
+# kznum4
+newmtl material_15
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_15.tga
+
+# kznum3
+newmtl material_16
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_16.tga
+
+# kznum2
+newmtl material_17
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_17.tga
+
+# kznum1
+newmtl material_18
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_18.tga
+
+# kznum0
+newmtl material_19
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_19.tga
+
+# +0button2
+newmtl material_20
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd cave_material_20.tga
+
